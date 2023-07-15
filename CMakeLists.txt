@@ -6,3 +6,9 @@ add_library(minimal-vcpkg STATIC
   src/minimal.c)
 
 target_include_directories(minimal-vcpkg PUBLIC include)
+
+install(TARGETS minimal-vcpkg
+        EXPORT minimal-vcpkg-targets
+        ARCHIVE DESTINATION lib/cmake/minimal-vcpkg
+        INCLUDES DESTINATION include
+        )
