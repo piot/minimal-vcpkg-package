@@ -12,3 +12,5 @@ install(TARGETS minimal-vcpkg
         ARCHIVE DESTINATION lib/cmake/minimal-vcpkg
         INCLUDES DESTINATION include
         )
+
+install(DIRECTORY ${PROJECT_SOURCE_DIR}/include/ DESTINATION include/)
